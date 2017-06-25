@@ -239,7 +239,6 @@ button:focus {outline:none;}
 /*---------------------------MAIN---------------------------------*/
 #main{
 	padding-top: 40px;
-	/*background: radial-gradient(ellipse closest-corner at 25% 40%, #472163, #2b1f31);*/
 	background: url('../img/dark_wall.png');
 	min-height: 100%;
 }
@@ -571,7 +570,7 @@ textarea{
     	width: 60%;
     }
     #main .twocol span h1{
-	  	padding-top: 5%;
+	  	padding: 10px;
 		line-height: 18pt;
     }
     #main .twocol span h1 sub {
@@ -583,9 +582,6 @@ textarea{
     #features span > img{
     	width: 30%
     }
-/*    .featuresrow img{
-		padding: 0 25px 50px 0px;
-    }*/
     #lines img{
 		width: 60%;
 	}
@@ -606,9 +602,12 @@ textarea{
 		text-align: center;
 		width: 100%;
 	}
+	#footer a{
+		margin: 0 18px;
+	}
 	#cont{
 		margin: 0 auto;
-		width: 120px;
+		width: 240px;
 		float: none;
 	}
 }
