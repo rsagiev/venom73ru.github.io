@@ -37,7 +37,7 @@ $(document).ready(function () {
     });
 
     //Переключение мобильного меню
-    $('.bars').click(function(){
+    $('.bars, #menu a').click(function(){
         $('#menu').toggleClass('open');
     });
 });
