@@ -1,13 +1,7 @@
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
-
-	$('#butt a').on('click', function(){
-		$('.#').stop().animate({
-			'left' : $(this).position().left
-		}, 400);
-	});
     //Скролл по якорям
-    $('#down').on('click', function (e) {
+    $('#menu a, #down').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
         $('.menuUnderline').stop().animate({
