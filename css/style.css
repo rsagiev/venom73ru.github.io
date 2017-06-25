@@ -170,7 +170,7 @@ input, textarea{
 	width: 23%;
 }
 .dark, #footer{
-	background: #2b1f31;
+	background: url('../img/dark_wall.png');
 	color: #aaa;
 }
 .dark h1{
@@ -239,15 +239,20 @@ button:focus {outline:none;}
 /*---------------------------MAIN---------------------------------*/
 #main{
 	padding-top: 40px;
-	background: radial-gradient(ellipse closest-corner at 25% 40%, #472163, #2b1f31);
+	/*background: radial-gradient(ellipse closest-corner at 25% 40%, #472163, #2b1f31);*/
+	background: url('../img/dark_wall.png');
 	min-height: 100%;
+}
+#radialgragient{
+	background: radial-gradient(circle closest-corner at 25% 40%, rgba(100,100,100,.1), rgba(255,255,255,0));
+}
+#main h1{
+	padding-top: 25%;
+	font-size: 48pt;
+	text-shadow: 0 0 15px #222;
 }
 #main h1:after{
 	display: none;
-}
-#main .twocol span h1{
-	padding-top: 25%;
-	font-size: 48pt;
 }
 #main span > img{
 	width: 100%;
@@ -258,7 +263,7 @@ button:focus {outline:none;}
 #price{
 	color: #ff2a13;
 	display: inline;
-
+	text-shadow: 0;
 }
 #price p{
 	color: #888;
@@ -272,7 +277,7 @@ button:focus {outline:none;}
 }
 /*---------------------------AFTERMAIN---------------------------------*/
 #aftermain{
-	border-top: 1px solid #3c2c44;
+	border-top: 1px solid #333;
 	padding-top: 15px;
 }
 #aftermain span {
@@ -294,7 +299,7 @@ button:focus {outline:none;}
 	padding-bottom: 0;
 }
 /*-----------------------------ABOUT----------------------------------*/
-#about .threecol > span{
+.threecol > span{
 	padding-bottom: 30px;
 }
 #about .threecol span > img{
@@ -381,7 +386,7 @@ button:focus {outline:none;}
 }
 #reviews img{
 	margin: 0 25px 30px 0;
-	border-radius: 250px;
+	border-radius: 50px;
 	width: 100%;
 }
 #reviews img:after{
@@ -405,6 +410,7 @@ button:focus {outline:none;}
 input, textarea{
 	width: 70%;
 	margin-bottom: 10px;
+	margin-left: -20px;
 	padding: 10px 20px 10px 40px;
 	border: 1px solid lightgray;
 	border-radius: 5px;
@@ -586,6 +592,25 @@ textarea{
 
 }
 @media (max-width: 420px){
+	.featuresrow div:first-child{
+		text-align: left;
+	}
+	#features .featuresrow img{
+		padding-left: 0;
+	}
+	#footer{
+		height: 100px;
+	}
+	#footer p{
+		padding-bottom: 0;
+		text-align: center;
+		width: 100%;
+	}
+	#cont{
+		margin: 0 auto;
+		width: 120px;
+		float: none;
+	}
 }
 @media (max-width: 320px){
 	.threecol > span{
@@ -596,18 +621,4 @@ textarea{
     	width: 100%;
     	padding: 20px 0;
     }
-    .featuresrow img{
-		padding: 6px 10px 0 5px;
-	}
-	#footer{
-		height: 100px;
-	}
-	#footer p{
-		padding-bottom: 0;
-	}
-	#cont{
-		margin: 0 auto;
-		width: 120px;
-		float: none;
-	}
 }
